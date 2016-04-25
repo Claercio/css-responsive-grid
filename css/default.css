@@ -1,0 +1,69 @@
+*{
+	margin: 0;
+	font-family: 'Simplifica';
+}
+
+/* Defina aqui a sua cor padrão que irá compor navbar, botões, rodapé, etc */
+.default_color{
+	background-color: #ef5350;
+}
+
+/* Classe que atribui background-color */
+.blue{
+	background-color: #90caf9;
+}
+
+/* Importa as fontes do projeto */
+@font-face {
+	font-family: Simplifica;
+	src: url(font/simplifica.ttf);
+	font-weight: normal;
+}
+
+.navbar p{
+	display: inline;
+	padding: 0.5rem;
+}
+
+.title{
+	font-weight: normal;
+	padding-bottom: 2rem;
+  	font-size: 54px;
+  	color: #fff;
+}
+
+.article{
+	font-size: 24px;
+	color: #fff;
+	text-align: justify;
+}
+
+.center{
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.right{
+	width: 50%;
+	padding-right: calc((100% - 1180px)/2);
+	box-sizing: border-box;
+	float: right;
+}
+
+
+/* Last section */
+
+input{
+	width: 70%;
+	height: 34px;
+	margin-bottom: 1%;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0;
+	border: 1px solid #777777;
+	color: #fff;
+}
+
+input:focus, input:focus:hover{
+	border: 2px solid #ef5350;
+}
