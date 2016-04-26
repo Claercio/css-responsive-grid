@@ -1,30 +1,27 @@
+/* Importa as fontes do projeto */
+@font-face {
+	font-family: Simplifica;
+	src: url(../font/simplifica.ttf);
+	font-weight: normal;
+}
+
+/* Adiciona estilos a todos os elementos */
 *{
 	margin: 0;
 	font-family: 'Simplifica';
 }
 
-/* Defina aqui a sua cor padrão que irá compor navbar, botões, rodapé, etc */
+/* Define a cor padrão que irá compor navbar, botões, rodapé, etc */
 .default_color{
-	background-color: #ef5350;
+	background-color: #26a69a;
 }
 
-/* Classe que atribui background-color */
-.blue{
-	background-color: #90caf9;
+/* Estilos da barra de navegação */
+.navbar{
+	height: 3.5rem;
 }
 
-/* Importa as fontes do projeto */
-@font-face {
-	font-family: Simplifica;
-	src: url(font/simplifica.ttf);
-	font-weight: normal;
-}
-
-.navbar p{
-	display: inline;
-	padding: 0.5rem;
-}
-
+/* Define os estilos de todos os títulos das páginas */
 .title{
 	font-weight: normal;
 	padding-bottom: 2rem;
@@ -32,38 +29,45 @@
   	color: #fff;
 }
 
+/* Define estilos para os subtítulos */
+.subtitle{
+	font-weight: normal;
+  	font-size: 28px;
+  	color: #fff;
+  	padding-bottom: 2rem;
+  	text-decoration: underline;
+}
+
+/* Define estilos para os textos "comuns" */
 .article{
 	font-size: 24px;
 	color: #fff;
 	text-align: justify;
 }
 
+/* Define cor de texto diferente quando o fundo da div for branco */
+.green-title *{
+	color: #26a69a !important;
+}
+
+/* Centraliza os elemtentos */
 .center{
 	text-align: center;
 	box-sizing: border-box;
 }
 
-.right{
-	width: 50%;
-	padding-right: calc((100% - 1180px)/2);
-	box-sizing: border-box;
-	float: right;
+/* Footer */
+.footer *{
+	font-size: 28px;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+/* Define estilos válidos somente em dispositivos com resolução até 600px */
+@media screen and (max-width: 600px) {
+	.article{
+		padding-bottom: 2rem;
+	}
 }
 
 
-/* Last section */
-
-input{
-	width: 70%;
-	height: 34px;
-	margin-bottom: 1%;
-	background-color: #fff;
-	border-radius: 8px;
-	box-shadow: 0;
-	border: 1px solid #777777;
-	color: #fff;
-}
-
-input:focus, input:focus:hover{
-	border: 2px solid #ef5350;
-}
